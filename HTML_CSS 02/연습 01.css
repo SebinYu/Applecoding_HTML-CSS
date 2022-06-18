@@ -1,0 +1,47 @@
+/* 
+앤티앨리어싱이 뭐냐면 그 픽셀의 각진 부분을 스무스하게 바꿔주는건데 
+윈도우에서 돋움, 굴림 폰트를 매우 작게 축소하거나 아니면 매우 크게 확대했을 때 매우 각져보입니다. 
+돋움, 굴림 뿐만 아니라 대부분의 폰트가 저런 현상이 일어납니다. 
+디자인 잘하는 사람 입장에선 매우 거슬리는 문제인데
+이 문제를 해결하고 싶다면 웹상의 글자를 살짝 돌려보십시오.  */
+p, h4, h3, h2, h1, span {
+    transform: rotate(0.03deg);
+}
+
+.flex-container{
+    display: flex;
+    justify-content : center;  /* 좌우정렬 */
+    align-items : center;  /* 상하정렬 */
+    flex-direction : column; /* 세로정렬 */
+    flex-wrap : wrap;  /* 폭이 넘치는 요소 wrap 처리 */
+}
+
+.flex-item {
+    padding: 50px;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    padding: 5px;
+    margin-top: 100px;
+    background-color: rgb(187, 139, 231);
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 5px;
+}
+
+.box {
+    margin: 3px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+}

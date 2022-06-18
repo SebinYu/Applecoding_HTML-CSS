@@ -1,0 +1,38 @@
+/* 시작할때 전체레이아웃 크기(=container) 정하고 시작하는게 좋다 */
+.container {
+    width: 800px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+
+/* float: left; 요소를 붕 띄워서 왼쪽정렬 */
+/* 보통 인라인이 안되는 div요소 박스들 가로배치하려 할때 사용 */
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    float: left;
+}
+
+.right {
+    width: 80%;
+    height: 400px;
+    background: coral;
+    float: left;
+}
+
+
+/* float를 사용한 이후오는 요소는
+반드시 clear: both; 를 해주어야 확인이 가능하다 */
+/* float를 사용 -> 다음에 오는 요소 위에 float요소들이 위에 떠있는 형태로 만들어지기 때문 */
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    clear: both;
+}

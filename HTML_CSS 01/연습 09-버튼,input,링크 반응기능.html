@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="연습 09-버튼,input,링크 반응기능.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">구매</button>
+    <input class="input-test">
+    <!-- 아래 처럼 작성시, 자동으로 chrome으로 연결 -->
+    <a href="연습 08-장바구니.html" class="custom__link"><strong>클릭</strong></a>
+    <div>
+        <!-- 고수가 사용하는 css기술
+            뼈대와 살
+        뼈대 디자인 class = main-btn
+        살 디자인용 class = bg-red,blue... -->
+        <button class="main-btn bg-red">더</button>
+        <button class="main-btn bg-blue">구매</button>
+    </div>
+<!-- 이렇게 뼈와 살을 각각의 class로 분리하는 방법의 장점은 
+1. 중복된 스타일을 재사용가능합니다.
+덕분에 CSS 파일용량도 줄어들고 코딩 시간도 절약됩니다.
+
+2. 유지보수가 편리해집니다.
+사이트의 모든 버튼의 font-size를 약간 줄여야한다면 이 경우엔 한 곳만 건드리면 모든 버튼이 다 수정되겠죠? 편리합니다.
+
+3. 코드 개빨리 짤 수 있습니다.
+.bg-red 이렇게 색깔놀이용 class들을 전문용어로 utility class라고 부릅니다. 
+이걸 미리 많이 만들어두면
+
+.bg-red {
+  background : red;
+}
+.bg-green {
+  background : green;
+}
+.bg-blue {
+  background : blue;
+}
+앞으로 버튼만들 때 class명을 두세개 고르기만 하면 되니까
+css 파일 열지않고도 다양한 스타일을 빠르게 만들 수 있습니다.
+(class명을 미리 외워두면요)
+
+
+.font-small {
+  font-size : 12px;
+}
+.font-medium {
+  font-size : 16px;
+}
+.font-lg {
+  font-size : 20px;
+}
+▲ 글씨 font-size 변경이 잦다면 이런 식으로 utility class 들을 많이 만들어두고
+
+글자 스타일링할 때 가져다 쓰면 코드짜는게 매우 빨라질 수 있습니다.
+(외워두면요)
+특히 width, margin, padding, text-align 이런 것들 조정하는 utility class 많이 만들어두면 편리합니다. 
+
+지금까지 설명한 뼈와 살을 분리하는 CSS 작성방식을 Object Oriented CSS 라고 부릅니다.
+어떤 아저씨가 옛날에 주장한건데 장점이 많아 실제 개발시 자주 사용합니다.
+이걸 잘 쓰는 라이브러리가 Bootstrap인데 나중에 알아봅시다.  -->
+
+</body>
+</html>

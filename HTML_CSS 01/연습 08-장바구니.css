@@ -1,0 +1,94 @@
+div,input {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.cart-background {
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
+}
+
+.w-100 {
+    width: 100%;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+
+h3 {
+    display: inline-block;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+
+button {
+    display: inline-block;
+    float: right;
+    padding: 30px;
+    background-color: #6d6dff;
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+}
+
+table {
+    /* border 사이 간격 없애기 */
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.cart-table {
+    /* 반응형 웹/앱 원할 시 아래 3개 필수 */
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+
+    background: white;
+
+    /* 테이블 border-radius 넣는법__box-shadow활용 */
+    border-collapse : collapse;
+    border-radius : 7px;
+    border-style : hidden;
+    box-shadow : 0 0 0 1px #c2d3de;
+}
+
+.cart-table td, .cart-table th {
+    padding: 20px;
+    border-bottom: 1px solid #c2d3de;
+}
+
+/* 3번째 해당하는 요소만 적용 */
+.cart-table th:nth-child(3) {
+    width: 400px;
+}
+
+.cart-table td:nth-child(5) {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.cart-table tr:nth-child(3) {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+
+/* 이러면 짝수로 등장하는 td에만 스타일을 줄 수도 있고
+(odd라고 쓰면 홀수입니다) */
+.cart-table td:nth-child(even), .cart-table th:nth-child(even) {
+    background: #dfeffa;
+  } 
+
+
+/* 이러면 3의 배수로 등장하는 3,6,9,12.. 번째 등장하는 요소에만 스타일을 줄 수 있습니다.
+3n + 1 이렇게 작성하면 (3의배수 +1) 번째 등장하는 요소에만 스타일을 줄 수 있습니다.  */
+.cart-table td:nth-child(3n+0) {
+    background: #6d6dff;
+  } 

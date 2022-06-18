@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="연습 06-회원관리창.css" rel ="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input / button의 전송(submit) 같은 경우 form이 부모태그여야 
+    잘 작동한다 -->
+    <!-- <button type="submit">전송</button>
+    <input type="submit"> -->
+    <!-- input에 넣는 속성들
+    <input placeholder="어쩌구" value="어쩌구" name="age">
+    placeholder는 배경 글자,
+    value는 미리 입력된 값,
+    name은 서버 기능개발에 필요한 인풋의 이름을 설정 가능합니다. -->
+    
+    <!-- 인풋 종류 알고만 가기
+    <input type="text">
+    <input type="email">
+    <input type="password">
+    <input type="radio">
+    <input type="file">
+    <input type="checkbox">
+    <input type="submit">-->
+
+
+
+    <!-- 고수들은 div 태그 w-100/50 등으로 padding 등을 나누어 정렬을 쉽게한다 -->
+    <!-- 재사용 유용함 -->
+    <div class="form-background">
+        <div class="form-white">
+            <form>
+                <div class="w-100">
+                    <h3>Contact Us</h3>
+                    <p>Your Email</p>
+                    <input class="form-input" type="email"
+                    placeholder="email@example.com">
+                    </div>
+                <div class = "w-50">
+                    <p>First Name</p>
+                    <input class="form-input" type="text">
+                </div>
+                <div class = "w-50">
+                    <p>Last Name</p>
+                    <input class="form-input" type="text">
+                </div>
+                <!-- w-50에 float로 정렬 clear: both 꼭 넣어주기->  -->
+                <div style="clear: both;"></div>
+
+                <div class="w-100">
+                    <p>Massage</p>
+                    <textarea class="form-input"></textarea>
+                </div>
+
+                <div class="w-100">
+                    <!-- lable태그: 해당 태그 클릭 -> checkbox 누른것과 같은 효과 -->
+                    <!-- 조건 : 
+                        1.input id="sub" 
+                        2.label for ="sub" 와 같이 sub로 연결하기-->
+                    <input id="sub" type ="checkbox">
+                    <label for ="sub">Subscribe</label>
+                    <button class="yellow_button">SEND</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

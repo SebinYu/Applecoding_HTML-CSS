@@ -1,0 +1,98 @@
+/* background-size: cover;이미지를 전체 div크기만큼 꽉 채우기 */
+/* background-repeat: no-repeat; 이미지 여러개 반복해서 나오는거 막기 */
+/* filter: brightness(50%) saturate(200%); 갬성 이미지 어둡게/채도조절 효과 */
+
+.main__background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../HTML_CSS/images/Lovepik_com-501619888-ocean-wave-computer-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: brightness(60%) saturate(200%); */
+    padding: 1px; /* margin collapse effect을 막기 위해 추가*/
+    margin-bottom: 200px;
+    text-align: center;
+
+}
+
+/* <div class="배경">
+        <p>안에 글씨</p>
+   </div>
+div 박스 안에 p 태그를 사용했습니다.
+p 태그에 상단 margin을 주기 위해 margin-top을 주게 되면
+div와 p가 동시에 margin-top이 생기게 됩니다. 뭔가 이상합니다.
+
+이 현상은 margin collapse effect 라고 부르는 일종의 버그입니다.
+원래 박스들의 테두리가 만나면 margin이 합쳐집니다. 
+(박스가 내부에서 만나든 외부에서 만나든 상관없습니다.)
+정확히 말하면
+
+1. 마진을 하나로 합쳐주고
+2. 혹여나 둘 다 마진이 있으면 둘 중에 더 큰 마진을 하나만 적용하게 됩니다.
+
+그래서 두 박스의 테두리가 겹치지 않도록 해주시면 보다 더 정확한 마진 노가다를 하실 수 있습니다. 
+강의 예제에선 부모 박스에 padding을 1px 이렇게 조금 주는 것으로 쉽게 해결 가능합니다. */
+
+.main__title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+/* 하지만 부모자식 관계가 아닌 박스끼리 margin bottom/top 각 각 200/100 씩 넣어도 
+간격은 큰 마진인 bottom 200만 적용되는 점 주의 */
+/* .background {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+} */
+
+
+
+.mini__box{
+    width: 80%;
+    /* 동적으로 늘어나기 가능한 width 최대 폭 지정 */
+    /* 참고로 width는 padding 영역 안에 있는 contents 크기를 의미
+    그러므로 max-width: 600px; 인 상태에서 padding 100을 주면,
+    div 전체 박스 크기는 700px */
+    max-width: 600px;
+    /* 그러므로 width가 전체(padding,border)를 포함하게 표현하기위해
+    box-sizing: border-box;를 지정 -> 전체 박스 크기 600px로 고정 */
+    box-sizing: border-box;
+
+    
+    /* 가운데 정렬: margin:auto; */
+    margin:auto;
+    padding: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    /* position: relative;를 통해서 위에 붕띄우면서 올리기 가능 */
+    position: relative;
+    top: -410px;
+    /* z-index:는 겹치는 요소가 있을때 가장 앞에 올 요소 우선순위 표기
+    숫자 값이 클수록 앞에 온다*/
+    z-index: 1;
+
+}
+
+.main__button{
+    padding:15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    /* position: 부여하면 원래위치 기준 이동가능 */
+    position: relative;
+    top: 50px;
+    z-index: 5;
+}
+
+/* position 속성은 크게 4개 값이 있습니다. */
+/* .box { */
+  /* position : static; 기준이 엄서요 (좌표적용 불가) */
+  /* position : relative; 기준이 내 원래 위치요 */
+  /* position : absolute; 기준이 내 부모요 */
+  /* position : fixed; 화면특정위치에 고정이 필요할때 사용
+  기준이 브라우저 창이요 (viewport) */
+/* } */

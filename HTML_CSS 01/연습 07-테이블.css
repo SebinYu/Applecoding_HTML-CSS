@@ -1,0 +1,8 @@
+td,th {
+    border: 1px solid black;
+}
+
+table {
+    /* border 사이 간격 없애기 */
+    border-collapse: collapse;
+}
