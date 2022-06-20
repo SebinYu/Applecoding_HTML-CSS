@@ -1,18 +1,16 @@
-/* background-size: cover;이미지를 전체 div크기만큼 꽉 채우기 */
-/* background-repeat: no-repeat; 이미지 여러개 반복해서 나오는거 막기 */
+/* 이미지 여러개 반복해서 나오는거 막기 */
 /* filter: brightness(50%) saturate(200%); 갬성 이미지 어둡게/채도조절 효과 */
 
 .main__background {
     width: 100%;
     height: 500px;
-    background-image: url(../HTML_CSS/images/Lovepik_com-501619888-ocean-wave-computer-wallpaper.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(./images/kim\'s\ convenience2.png);
+    background-size: cover; /* 이미지를 전체 div크기만큼 꽉 채우기 */
+    background-repeat: no-repeat; /* 이미지 여러개 반복해서 나오는거 막기 */
     /* filter: brightness(60%) saturate(200%); */
     padding: 1px; /* margin collapse effect을 막기 위해 추가*/
     margin-bottom: 200px;
     text-align: center;
-
 }
 
 /* <div class="배경">
@@ -62,7 +60,7 @@ div와 p가 동시에 margin-top이 생기게 됩니다. 뭔가 이상합니다.
     box-sizing: border-box;
 
     
-    /* 가운데 정렬: margin:auto; */
+    /* 박스 가운데 정렬: margin:auto; */
     margin:auto;
     padding: 20px;
     text-align: center;
