@@ -48,9 +48,7 @@ inherit 되는 스타일 (-999점_중요도 가장 낮음)*/
     color:blueviolet;
 }
 
-/* div 태그경우 가운데 정렬에 필요한 3요소중 
-가로행 전체를 차지하는 기능인, display: block;를 이미 포함 */
-/* 그러므로 div 태그 사용시 margin 2요소만 넣어주면 된다 */
+
 
 /* font-size, color, font-family, text-align 이런 속성들은
 부모 태그(div)에 쥐어주면 거기 안에 있던 태그들까지 전부 상속됩니다. 
@@ -60,10 +58,17 @@ inherit 되는 스타일 (-999점_중요도 가장 낮음)*/
 .box {
     width: 200px;
     background-color: aquamarine;
+    /* margin은 바깥여백
+        padding은 안쪽여백 */
     margin: 10px;
     padding: 40px;
+    /* border = 테두리 디자인 */
     border-radius: 5px;
 
+    /* 가운데 정렬 */
+        /* div 태그경우 가운데 정렬에 필요한 3요소중 
+        가로행 전체를 차지하는 기능인, display: block;를 이미 포함 */
+        /* 그러므로 div 태그 사용시 margin 2요소만 넣어주면 된다 */
     margin-left: auto;
     margin-right: auto;
 

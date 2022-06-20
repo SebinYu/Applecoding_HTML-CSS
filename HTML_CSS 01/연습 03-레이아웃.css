@@ -9,7 +9,7 @@
     background-color: aquamarine;
 }
 
-
+/* 한줄에 요소 여러개 나열 */
 /* float: left; 요소를 붕 띄워서 왼쪽정렬 */
 /* 보통 인라인이 안되는 div요소 박스들 가로배치하려 할때 사용 */
 .left-menu {

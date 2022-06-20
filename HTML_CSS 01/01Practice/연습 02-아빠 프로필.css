@@ -1,3 +1,11 @@
+/* 운영체제 색 설정에서 다크모드 설정시 웹페이지 다크모드로 전환하게하는 문법 */
+@media (perfers-color-scheme:dark) {
+    body{
+        background: black;
+        color: white;
+    }
+}
+
 .profile {
     width: 300px;
     
